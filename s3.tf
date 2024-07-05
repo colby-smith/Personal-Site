@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket = "colby-smith-test-website"
+  bucket = "colby-smith-labs.com"
 }
 
 resource "aws_s3_bucket_public_access_block" "bucket_access_block" {
