@@ -1,6 +1,10 @@
 # Personal-Site
 ## About
-This is a static website hosted in s3 using CloudFront and Route 53, created using Terraform. The full website can be found at [Colby Smith Labs](http://colby-smith-labs.com). The CSS, JS and HMTL were provided using a free template which I have changed and modified to make my own.
+This is a static website hosted in s3 using CloudFront and Route 53, created using Terraform. The full website can be found at [Colby Smith Labs](http://www.colby-smith-labs.com/). The CSS, JS and HMTL were provided using a free template which I have changed and modified to make my own.
+
+## Architecture diagram
+![S3-Static Site](https://github.com/colby-smith/Personal-Site/assets/160542058/e2f2a907-122c-4524-9f4e-1b4704bc8693)
+
 
 ## Prerequisites
 There are no prerequisites to use/view the website, however if you wish to copy or use this software for your own, there are a few things you need to install to do so, such as:
@@ -8,8 +12,6 @@ There are no prerequisites to use/view the website, however if you wish to copy 
 * AWS CLI
 * Terraform
   
-
-
 ## Installing WSL (Windows Subsystem for Linux)
 
 1. Copy and paste the code below into your shell and hit enter.
