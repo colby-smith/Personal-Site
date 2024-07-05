@@ -1,4 +1,6 @@
 resource "aws_cloudfront_distribution" "distribution" {
+  provider = aws.eu_west_1
+
   enabled         = true
   is_ipv6_enabled = true
 
@@ -19,7 +21,8 @@ resource "aws_cloudfront_distribution" "distribution" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn = aws_acm_certificate.certificate.arn
+    ssl_support_method  = "sni-only"
   }
 
   restrictions {
@@ -37,4 +40,8 @@ resource "aws_cloudfront_distribution" "distribution" {
     cached_methods         = ["GET", "HEAD"]
     target_origin_id       = aws_s3_bucket.bucket.bucket_regional_domain_name
   }
+
+  # Add these fields if missing
+  default_root_object = "index.html"
+  price_class         = "PriceClass_100"  # You can select the price class you prefer
 }
