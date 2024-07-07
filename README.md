@@ -1,6 +1,6 @@
 # Personal-Site
 ## About
-This is a static website hosted in s3 using CloudFront and Route 53, created using Terraform. The full website can be found [here](colby-smith-labs.com/). The CSS, JS and HMTL were provided using a free template which I have changed and modified to make my own.
+This is a static website hosted in s3 using CloudFront and Route 53, created using Terraform. The full website can be found at [https://colby-smith-labs.com](https://colby-smith-labs.com). The CSS, JS and HMTL were provided using a free template which I have changed and modified to make my own.
 
 ## Architecture diagram
 ![S3-Static Site](https://github.com/colby-smith/Personal-Site/assets/160542058/e2f2a907-122c-4524-9f4e-1b4704bc8693)
